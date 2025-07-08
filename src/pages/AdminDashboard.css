@@ -1,0 +1,151 @@
+.admin-dashboard-header-row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 2000;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.10);
+}
+
+.admin-dashboard-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.admin-dashboard-logout {
+  background: #fff;
+  color: #e53935;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+  margin-right: 32px;
+}
+
+.admin-dashboard-logout:hover {
+  background: #e53935;
+  color: #fff;
+}
+
+.admin-dashboard-container {
+  padding-top: 64px;
+}
+
+.admin-dashboard-section {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #388e3c;
+  margin: 36px 0 18px 0;
+}
+
+.admin-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.admin-dashboard-forms-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.admin-dashboard-forms-row > * {
+  flex: 1 1 350px;
+  max-width: 500px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.equal-height-forms > * {
+  height: 100%;
+}
+
+.admin-dashboard-products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 16px;
+}
+
+.admin-dashboard-search {
+  padding: 8px 14px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 220px;
+  transition: border 0.2s;
+}
+
+.admin-dashboard-search:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.admin-dashboard-search-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-dashboard-clear-btn {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.admin-dashboard-clear-btn:disabled {
+  background: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.admin-dashboard-clear-btn:not(:disabled):hover {
+  background: #bdbdbd;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .admin-dashboard-forms-row {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .admin-dashboard-forms-row > * {
+    max-width: 100%;
+    width: 100%;
+  }
+  .admin-dashboard-products-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .admin-dashboard-search {
+    min-width: 0;
+    width: 100%;
+  }
+} 
