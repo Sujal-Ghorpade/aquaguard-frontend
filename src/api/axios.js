@@ -2,7 +2,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://aquaguard-backend.onrender.com/api", // ✅ adjust this to your backend URL + API prefix
+  baseURL: "https://aquaguard-backend-irld.onrender.com/api", 
   headers: {
     "Content-Type": "application/json",
   },
